@@ -1,0 +1,61 @@
+.club_page{
+    .club_page_info{
+        padding: 80px 0;
+        text-align: center;
+        .content{
+            padding: 0 15%;
+            .j_title{
+                margin-bottom: 80px;
+            }
+            .j_text{
+                text-align: justify;
+                letter-spacing: 1px;
+                margin-bottom: 80px;
+                font-size: 20px;
+            }
+        }
+    }
+    .club_lyfestyle{
+        padding: 0 0 80px ;
+        .bg_block{
+            height: 350px;
+            width: 90%;
+            background-color: $color-gold;
+            background-image: url('../img/lines_bg.png');                
+        }
+        .content{
+            padding: 0 15%;
+            margin-top: -250px;
+            .j_title{
+                margin-bottom: 40px;
+                font-size: 40px;
+                color: white;
+            }
+            .j_text{
+                text-align: justify;
+                letter-spacing: 1px;
+                font-size: 20px;
+            }
+            .lifestyle_image{
+                min-height: 400px;
+                width: 100%;
+            }
+        }
+    
+    }
+    .sec_home_club{
+        .block_flex {
+            .content{ 
+                .c_info{ 
+                    padding-left:  20%;
+                    .j_text{
+                        padding: 0;
+                    }
+                    .j_link{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
