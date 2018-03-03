@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+
+body{
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    &:focus{
+        outline: none;
+    }
+}
+button{
+    border: none;
+    &:focus,
+    &:visited{
+        outline: none;
+    }
+}
+.j_title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 80px;
+    color: $color-title
+}
+.j_text{
+    font-size: 24px;
+    color: $color-text;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.j_link{
+    background-color: white;
+    color: $color-gold;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.25);
+    font-family: 'Oswald', sans-serif;
+}
+
+#contactModal{
+    .modal-dialog{
+        margin: 4rem auto;
+    }
+    .modal-content{
+        .modal-header{
+            .close{
+                margin: 0;
+                background-color: transparent;
+                border: none;
+                font-size: 60px;
+                line-height: 1;
+                padding: 5px 21px 15px;
+                background-color: $color-gold;
+                border-radius: 50%;
+                position: absolute;
+                right: -31px;
+                color: white;
+                top: -23px;
+            }
+        }
+        
+        .modal-title{
+            text-align: center;
+            color: $color-title;
+            font-size: 30px;
+        }
+        .modal-body{
+            padding: 5% 10%;
+            .form-group{
+                label{
+                    margin-bottom: 10px;
+                    display: block;
+                }
+            }
+            
+            .j_link{
+                border: none;
+            }
+        }
+    }
+    
+}

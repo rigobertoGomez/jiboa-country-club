@@ -1,0 +1,68 @@
+.houses_page{
+    .sec_list_houses{
+        margin-top: 350px;
+        .house-img  {
+          
+            height: 500px;
+            background-color: $color-gold;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url('../img/lines_bg.png');
+            margin-bottom: 400px;
+            
+            .h_image{
+                width: 80%;
+                height: 500px;
+                margin-top: -400px;
+                background-size: cover;
+                background-position: center;
+
+            }
+            .j_text{
+                color: white;
+                letter-spacing: 2px;
+                font-weight: 400;
+                font-size: 26px;
+            }
+
+            .h_info{
+                width: 80%;
+                text-align: right;
+                .j_text{
+                    margin-bottom: 0;
+                }
+                span{
+                    display: block;
+                    
+                    &.j_text{
+                        font-size: 16px;
+                        
+                    }
+                }
+                .j_link{
+                    margin-top: 20px;
+                    display: inline-flex;
+                    
+                }
+            }
+        }
+        .house_content{
+            padding: 0 10%;
+            .c_subtitle{
+                color: $color-title;
+                font-size: 16px;
+
+            }
+            .j_title{
+                font-size:48px;
+            }
+            .j_text{
+                font-size: 18px;
+            }
+        }
+    }
+
+}

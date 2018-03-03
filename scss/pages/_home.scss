@@ -1,0 +1,199 @@
+.overlay{
+    position: relative;
+    
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3411764705882353);
+    
+    
+}
+.sec_home_hero{
+    height: 85vh;
+    background-color: coral;
+    background-size: cover;
+    background-position: center;
+    
+}
+.sec_home_intro{
+    padding: 80px 0 160px;
+    .col-video-prev{
+        .video_prev{
+            width: 100%;
+            height: 600px;
+            background-color: beige;
+            z-index: 1;
+            background-size: cover;
+            background-position: center;
+            
+            &:before{
+                content: "";
+                width: 85%;
+                height: 200px;
+                background-color: $color-gold;
+                display: block;
+                position: absolute;
+                bottom: -80px;
+                z-index: -1;
+                background-image: url('../img/lines_bg.png');                
+                
+            }
+            .overlay{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            .video_play_btn{
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.596);
+                display: block;
+                border: 4px solid $color-gold;
+                transition: .3s all ease-in;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .icon-svg{
+                    margin-left: 10px;
+                }
+                &:hover{
+                    background-color: $color-gold;
+                }
+            }
+        }
+        }
+    }
+    .col-info{
+        .content{
+            padding: 0 20% ;
+            .j_title{
+                padding: 0 20% 0 0;
+            }
+        }
+    }
+}
+.sec_home_houses{
+    padding: 80px 0;
+    .content{
+        padding: 0 10% 40px 10%;
+    }
+    .houses_cover{
+        width: 90%;
+        height: 500px;
+        background-color: beige;
+        background-position: bottom;
+        background-size: cover;
+    }
+    .house_quote{
+        padding: 80px 0;
+        max-width: 50%;
+        margin: auto;
+        
+        .j_text{
+            color: $color-title;
+            font-weight: 400;    
+        }
+        &:after{
+            content: '''';
+            font-size: 80px;
+            color: $color-text;
+            display: inline-block;
+        }
+    }
+    .house_types{
+        padding: 0 5%;
+        
+        .items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            .item{
+                flex-wrap: wrap;
+                width: 350px;               
+                min-height: 400px;
+                background-color:white;
+                box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.25);
+                margin: 0 20px;
+                .i_content{                    
+                    width: 100%;                  
+                    .i_image{
+                        min-height: 300px;
+                        width: 100%;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                    .i_text{
+                        min-height: 100px;
+                        display: flex;
+                        align-items: center;
+                        padding: 0 30px;
+                        .j_title{
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .house_action{
+        margin: 160px 0 80px;
+    }
+}
+.sec_home_club{
+    padding-bottom: 180px;
+    .block_flex{
+        align-items: center;
+        flex-direction: row-reverse;
+    .club_cover{
+     width: 55%;
+     height: 500px;
+     background-color: beige;
+     position: absolute;
+     left: 0;
+     background-position: center;
+     background-size: cover;
+
+    }
+    .content{
+        width: 50%;
+     height: 800px;
+     background-color: $color-gold;
+     padding: 40px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-image: url('../img/lines_bg.png');
+     .c_info{
+         z-index: 100;
+         padding: 0 10% ;
+        
+         
+         .c_title{
+            width: 600px;
+            background-color:rgba(255, 255, 255, 0.42);
+            padding: 10px 50px;       
+            margin-left: -250px;
+            text-transform: uppercase;  
+            display: flex;
+            align-items: center;
+            .icon-svg{
+                margin-right: 40px;
+            }
+         }
+         .j_title{
+            font-size:50px;   
+             color: white;
+         }
+         .j_text{
+             color: white;
+             padding: 0 5% 0 20%;
+             margin-bottom: 40px;
+         }
+         .j_link{
+             margin-left: 20%;
+         }
+     }
+    }
+}
+}
